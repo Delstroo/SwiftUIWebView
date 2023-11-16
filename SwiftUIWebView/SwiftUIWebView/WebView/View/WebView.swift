@@ -11,14 +11,18 @@ import WebKit
 struct HomeView: View {
     @StateObject var viewModel = WebViewModel()
     @State private var shouldLoadGoogle = false
+    @State private var webViewBackgroundColor: Color = .white // Default background color
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             // WebView
             WebView(webView: $viewModel.webView)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .background(Color.background)
                 .onAppear {
                     shouldLoadGoogle = true
+                    viewModel.webView.isOpaque = false
+                    viewModel.webView.backgroundColor = .clear
                 }
                 .onChange(of: shouldLoadGoogle) { shouldLoad in
                     if shouldLoad {
@@ -29,10 +33,10 @@ struct HomeView: View {
                 }
             // URLBarView
             URLBarView(viewModel: viewModel, shouldLoadGoogle: $shouldLoadGoogle)
-            
-            // ToolbarView
-            ToolbarView(viewModel: viewModel)
+                .ignoresSafeArea()
+                .background(Color.background)
         }
+        .backgroundStyle(Color.background)
     }
 }
 
@@ -55,4 +59,5 @@ struct WebView: UIViewRepresentable {
 
 #Preview {
     HomeView()
+        .preferredColorScheme(.dark)
 }

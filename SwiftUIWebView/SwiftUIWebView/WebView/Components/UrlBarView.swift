@@ -7,12 +7,24 @@
 
 import SwiftUI
 
-struct UrlBarView: View {
+struct URLBarView: View {
+    @ObservedObject var viewModel: WebViewModel
+    @Binding var shouldLoadGoogle: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TextField("Search on Google", text: $viewModel.urlString, onCommit: viewModel.loadUrl)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+            .onChange(of: shouldLoadGoogle) { shouldLoad in
+                if shouldLoad {
+                    viewModel.urlString = "https://www.google.com"
+                    viewModel.loadUrl()
+                    shouldLoadGoogle = false
+                }
+            }
     }
 }
 
 #Preview {
-    UrlBarView()
+    URLBarView(viewModel: WebViewModel(), shouldLoadGoogle: .constant(true))
 }

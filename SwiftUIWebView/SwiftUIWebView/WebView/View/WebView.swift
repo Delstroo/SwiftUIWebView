@@ -14,11 +14,9 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            TextField("Search on Google", text: $viewModel.urlString, onCommit: viewModel.loadUrl)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
+            // WebView
             WebView(webView: $viewModel.webView)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .onAppear {
                     shouldLoadGoogle = true
                 }
@@ -29,6 +27,11 @@ struct HomeView: View {
                         shouldLoadGoogle = false
                     }
                 }
+            // URLBarView
+            URLBarView(viewModel: viewModel, shouldLoadGoogle: $shouldLoadGoogle)
+            
+            // ToolbarView
+            ToolbarView(viewModel: viewModel)
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9343812B06AF3C00371B1B /* UrlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9343802B06AF3C00371B1B /* UrlBarView.swift */; };
+		1B9343842B06AF6A00371B1B /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9343832B06AF6A00371B1B /* ToolbarView.swift */; };
 		1BD0E58D2B057B040091E8FD /* SwiftUIWebViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0E58C2B057B040091E8FD /* SwiftUIWebViewApp.swift */; };
 		1BD0E58F2B057B040091E8FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0E58E2B057B040091E8FD /* ContentView.swift */; };
 		1BD0E5912B057B050091E8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD0E5902B057B050091E8FD /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9343802B06AF3C00371B1B /* UrlBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBarView.swift; sourceTree = "<group>"; };
+		1B9343832B06AF6A00371B1B /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		1BD0E5892B057B040091E8FD /* SwiftUIWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD0E58C2B057B040091E8FD /* SwiftUIWebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebViewApp.swift; sourceTree = "<group>"; };
 		1BD0E58E2B057B040091E8FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B93437F2B06AF3000371B1B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1B9343802B06AF3C00371B1B /* UrlBarView.swift */,
+				1B9343832B06AF6A00371B1B /* ToolbarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1BD0E5802B057B030091E8FD = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 		1BD0E5B72B057B1C0091E8FD /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				1B93437F2B06AF3000371B1B /* Components */,
 				1BD0E5BC2B057B890091E8FD /* ViewModel */,
 				1BD0E5BB2B057B810091E8FD /* Model */,
 				1BD0E5BA2B057B750091E8FD /* View */,
@@ -300,11 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9343812B06AF3C00371B1B /* UrlBarView.swift in Sources */,
 				1BD0E5BE2B057B9D0091E8FD /* HistoryModel.swift in Sources */,
 				1BD0E5B92B057B620091E8FD /* WebView.swift in Sources */,
 				1BD0E58F2B057B040091E8FD /* ContentView.swift in Sources */,
 				1BD0E5C02B057BBE0091E8FD /* WebViewModel.swift in Sources */,
 				1BD0E58D2B057B040091E8FD /* SwiftUIWebViewApp.swift in Sources */,
+				1B9343842B06AF6A00371B1B /* ToolbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B9343812B06AF3C00371B1B /* UrlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9343802B06AF3C00371B1B /* UrlBarView.swift */; };
+		1B9343812B06AF3C00371B1B /* URLBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9343802B06AF3C00371B1B /* URLBarView.swift */; };
 		1B9343842B06AF6A00371B1B /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9343832B06AF6A00371B1B /* ToolbarView.swift */; };
 		1BD0E58D2B057B040091E8FD /* SwiftUIWebViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0E58C2B057B040091E8FD /* SwiftUIWebViewApp.swift */; };
 		1BD0E58F2B057B040091E8FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0E58E2B057B040091E8FD /* ContentView.swift */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B9343802B06AF3C00371B1B /* UrlBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBarView.swift; sourceTree = "<group>"; };
+		1B9343802B06AF3C00371B1B /* URLBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBarView.swift; sourceTree = "<group>"; };
 		1B9343832B06AF6A00371B1B /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		1BD0E5892B057B040091E8FD /* SwiftUIWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD0E58C2B057B040091E8FD /* SwiftUIWebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebViewApp.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		1B93437F2B06AF3000371B1B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1B9343802B06AF3C00371B1B /* UrlBarView.swift */,
+				1B9343802B06AF3C00371B1B /* URLBarView.swift */,
 				1B9343832B06AF6A00371B1B /* ToolbarView.swift */,
 			);
 			path = Components;
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9343812B06AF3C00371B1B /* UrlBarView.swift in Sources */,
+				1B9343812B06AF3C00371B1B /* URLBarView.swift in Sources */,
 				1BD0E5BE2B057B9D0091E8FD /* HistoryModel.swift in Sources */,
 				1BD0E5B92B057B620091E8FD /* WebView.swift in Sources */,
 				1BD0E58F2B057B040091E8FD /* ContentView.swift in Sources */,
@@ -494,7 +494,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -532,7 +532,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

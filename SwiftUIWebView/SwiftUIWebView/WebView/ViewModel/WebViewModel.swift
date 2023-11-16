@@ -35,15 +35,23 @@ class WebViewModel: ObservableObject {
     func loadUrl() {
         let input = urlString.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         if input.isEmpty { return }
+        
+        var formattedInput = input
+        //This is going to need to be revisited//
+        //WIP//
+        if let url = URL(string: input), url.host != nil, !input.hasPrefix("http://") && !input.hasPrefix("https://") {
+            formattedInput = "https://" + input
+        }
+
         var urlToLoad: URL?
 
-        if let url = URL(string: input), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: formattedInput), UIApplication.shared.canOpenURL(url) {
             // Input is a valid URL
             urlToLoad = url
         } else {
             // Input is not a valid URL, treat it as a search query
             let baseURL = "https://www.google.com/search?q="
-            if let encodedQuery = input.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            if let encodedQuery = formattedInput.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
                let url = URL(string: baseURL + encodedQuery) {
                 urlToLoad = url
             }
@@ -54,7 +62,6 @@ class WebViewModel: ObservableObject {
             saveHistoryItem(HistoryModel(title: "Custom Title", url: url, timestamp: Date()))
         }
     }
-
     
     func goForward() {
         webView.goForward()

@@ -12,6 +12,7 @@ struct HomeView: View {
     @StateObject var viewModel = WebViewModel()
     @State private var shouldLoadGoogle = false
     @State private var webViewBackgroundColor: Color = .white // Default background color
+    @StateObject var tabsViewModel = TabsViewModel()
     
     var body: some View {
         VStack(spacing: 0) {
@@ -23,6 +24,7 @@ struct HomeView: View {
                     shouldLoadGoogle = true
                     viewModel.webView.isOpaque = false
                     viewModel.webView.backgroundColor = .clear
+                    
                 }
                 .onChange(of: shouldLoadGoogle) { shouldLoad in
                     if shouldLoad {
@@ -30,6 +32,9 @@ struct HomeView: View {
                         viewModel.loadUrl()
                         shouldLoadGoogle = false
                     }
+                }
+                .onChange(of: viewModel.urlString) { oldValue, newValue in
+                    tabsViewModel.createTab(title: viewModel.webView.title ?? "", url: viewModel.urlString)
                 }
             // URLBarView
             URLBarView(viewModel: viewModel, shouldLoadGoogle: $shouldLoadGoogle)
@@ -42,6 +47,7 @@ struct HomeView: View {
 
 struct WebView: UIViewRepresentable {
     @Binding var webView: WKWebView
+    
     
     func makeUIView(context: Context) -> WKWebView {
         let preferences = WKPreferences()

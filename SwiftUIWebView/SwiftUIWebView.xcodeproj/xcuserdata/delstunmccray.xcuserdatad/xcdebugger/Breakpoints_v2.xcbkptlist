@@ -7,20 +7,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F5BB2C2C-6E99-4D73-86E8-4FCA5E1E82B9"
+            uuid = "4AD0AB0D-4ED9-4693-91BA-484B73A3EB52"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUIWebView/WebView/ViewModel/WebViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "loadUrl()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F5BB2C2C-6E99-4D73-86E8-4FCA5E1E82B9 - c91c09dbaf6867f2"
+                  uuid = "4AD0AB0D-4ED9-4693-91BA-484B73A3EB52 - c91c09dbaf6867b0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/delstunmccray/Documents/iOSDev/SwiftUIWebView/SwiftUIWebView/SwiftUIWebView/WebView/ViewModel/WebViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "2064">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "2520">
                </Location>
                <Location
-                  uuid = "F5BB2C2C-6E99-4D73-86E8-4FCA5E1E82B9 - c91c09dbaf6867f2"
+                  uuid = "4AD0AB0D-4ED9-4693-91BA-484B73A3EB52 - c91c09dbaf6867b0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,9 +45,9 @@
                   urlString = "file:///Users/delstunmccray/Documents/iOSDev/SwiftUIWebView/SwiftUIWebView/SwiftUIWebView/WebView/ViewModel/WebViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "2252">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1972">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,16 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "54EE54FA-4283-4420-9C3F-46406C07716D"
+            uuid = "41760C17-4260-4426-8816-3E5FAA05994F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftUIWebView/WebView/ViewModel/WebViewModel.swift"
+            filePath = "SwiftUIWebView/Tabs/TabsViewModel/TabsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "loadUrl()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "createTab(title:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
